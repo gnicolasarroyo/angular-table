@@ -12,28 +12,33 @@ caption  { display: table-caption }
 
 
 body {
-	color: darkslategrey
+	color: darkslategrey;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 
 di-table {
-	width: 100%;
-	max-width: 100%;
-	display: table;
 	background-color: transparent;
+	border-collapse: collapse;
+    border-spacing: 0;
+	display: table;
+	max-width: 100%;
+	width: 100%;
 }
 
-di-table-head {
+
+di-table > di-table-head {
 	display: table-header-group;
 }
 
-di-table-head-row {
+di-table > di-table-head > di-table-head-row {
 	display: table-row;
 }
 
-di-table-head-row-cell {
+di-table > di-table-head > di-table-head-row > di-table-head-row-cell {
 	border-top: 0;
-	border-bottom: 2px solid dimgray;
+	border-bottom: 2px solid #ddd;
 	display: table-cell;
 	font-weight: bold;
 	line-height: 1.5;
@@ -43,16 +48,16 @@ di-table-head-row-cell {
 	white-space: nowrap;
 }
 
-di-table-body {
+di-table > di-table-body {
 	display: table-row-group;
 }
 
-di-table-body-row {
+di-table > di-table-body > di-table-body-row {
 	display: table-row;
 }
 
-di-table-body-row-cell {
-	border-top: 1px solid dimgray;
+di-table > di-table-body > di-table-body-row > di-table-body-row-cell {
+	border-top: 1px solid #ddd;
 	border-bottom: 0;
 	display: table-cell;
 	line-height: 1.5;
