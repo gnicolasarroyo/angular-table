@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example16-production</title>
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="script.js"></script>
+  
+
+  
+</head>
+<body ng-app="App">
+  <div ng-controller="Controller as ctx">
+    <di-table 
+    source="ctx.collection"
+    columns-head="ctx.columnsHead"
+    columns-body="ctx.columnsBody"></di-table>
+    <hr>
+    <button type="button" ng-click="ctx.addTask()">Add Task</button>
+  </div>
+</body>
+</html>
