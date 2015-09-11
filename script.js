@@ -25,6 +25,34 @@
   
   module.controller('Controller', Controller);
   
+  /** -------------------------- DI.TABLE.HEAD.ROW --------------------*/
+  
+  function diTableHeadRowCell () {
+    return {
+      "restrict": "E",
+      "scope": {
+        "column": "=column"
+      },
+      "templateUrl": "di.table.head.row.cell.html"
+    };
+  }
+  
+  module.directive("diTableHeadRowCell", diTableHeadRowCell);
+  
+  /** -------------------------- DI.TABLE.HEAD.ROW --------------------*/
+  
+  function diTableHeadRow () {
+    return {
+      "restrict": "E",
+      "scope": {
+        "columns": "=columns"
+      },
+      "templateUrl": "di.table.head.row.html"
+    };
+  }
+  
+  module.directive("diTableHeadRow", diTableHeadRow);
+  
   /** -------------------------- DI.TABLE.HEAD -------------------------*/
   
   function diTableHead () {
@@ -38,6 +66,20 @@
   }
   
   module.directive("diTableHead", diTableHead);
+  
+  /** -------------------------- DI.TABLE.HEAD.ROW --------------------*/
+  
+  function diTableBodyRowCell () {
+    return {
+      "restrict": "E",
+      "scope": {
+        "column": "=column"
+      },
+      "templateUrl": "di.table.body.row.cell.html"
+    };
+  }
+  
+  module.directive("diTableBodyRowCell", diTableBodyRowCell);
 
    /** -------------------------- DI.TABLE.BODY.ROW ----------------------*/
   
